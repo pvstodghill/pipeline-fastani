@@ -106,3 +106,4 @@ export LC_ALL=C
 INPUTS=${DATA}/0_inputs
 FASTANI=${DATA}/1_fastani
 PLOTS=${DATA}/2_plots
+CLADES=${DATA}/3_clades
