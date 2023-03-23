@@ -29,7 +29,7 @@ echo 1>&2 '## Make .dot file'
 ${PIPELINE}/scripts/make-clades.pl \
 	   -F ${FASTANI}/fastani.txt \
 	   -c 0.0 \
-	   -d ${CLADES}/species.dot \
+	   -d ${CLADES}/fastani.dot \
 	   > /dev/null
 
 
