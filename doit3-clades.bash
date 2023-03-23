@@ -13,17 +13,26 @@ mkdir -p ${CLADES}
 
 echo 1>&2 '# Make clades'
 
+echo 1>&2 '## Make species list'
 ${PIPELINE}/scripts/make-clades.pl \
 	   -F ${FASTANI}/fastani.txt \
 	   -c ${SPECIES_CUTOFF} \
-	   -d ${CLADES}/species.dot \
 	   > ${CLADES}/species.txt
 
+echo 1>&2 '## Make genus list'
 ${PIPELINE}/scripts/make-clades.pl \
 	   -F ${FASTANI}/fastani.txt \
 	   -c ${GENUS_CUTOFF} \
-	   -d ${CLADES}/genus.dot \
 	   > ${CLADES}/genus.txt
+
+echo 1>&2 '## Make .dot file'
+${PIPELINE}/scripts/make-clades.pl \
+	   -F ${FASTANI}/fastani.txt \
+	   -c 0.0 \
+	   -d ${CLADES}/species.dot \
+	   > /dev/null
+
+
 
 # ------------------------------------------------------------------------
 # Done.
