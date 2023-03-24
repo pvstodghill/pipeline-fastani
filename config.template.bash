@@ -13,12 +13,12 @@ GENUS_CUTOFF=85.0
 
 # ------------------------------------------------------------------------
 
-# # Uncomment to get packages from HOWTO
-# PACKAGES_FROM=howto
+# Uncomment to get packages from HOWTO
+PACKAGES_FROM=howto
 
-# Uncomment to use conda
-PACKAGES_FROM=conda
-CONDA_ENV=pipeline-fastani
+# # Uncomment to use conda
+# PACKAGES_FROM=conda
+# CONDA_ENV=pipeline-fastani
 
 #THREADS=$(nproc --all)
 
