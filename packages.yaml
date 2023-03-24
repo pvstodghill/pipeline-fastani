@@ -1,6 +1,6 @@
-# https://example.com/fixme
 ---
-image: pvstodghill/fixme
-version: fixme__fixme
+image: pvstodghill/pipeline-fastani
+version: 2023-03-24
 commands:
-  - fixme
+  - fastANI
+  - Rscript
