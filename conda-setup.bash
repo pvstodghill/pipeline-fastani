@@ -15,6 +15,7 @@ PACKAGES=
 
 PACKAGES+=" bioconductor-complexheatmap"
 PACKAGES+=" fastani"
+PACKAGES+=" r-ape"
 PACKAGES+=" r-gplots"
 PACKAGES+=" r-reshape2"
 
